@@ -2,12 +2,16 @@
     margin: 0; padding: 0; box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    
 }
 // colors schemes
 $heading:#0B132A;
 $text:#4F5665;
 $fill:#F53838;
 // flex aligment method in shoter   
+a{
+    color: $text;
+}
 header{
     margin: 0 auto;
     height: 13vh;
@@ -29,9 +33,13 @@ header{
         gap: 30px;
     }
     .sign-up{
-        padding: 10px 30px;
+        padding: 45px 150px;
         color:$fill;
         border: 1px solid $fill;
         border-radius: 20px;
     }
+}
+
+@media (min-width:300px) and (max-width:600px) {
+
 }
