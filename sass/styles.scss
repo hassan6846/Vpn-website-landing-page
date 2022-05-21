@@ -1,7 +1,37 @@
 *{
     margin: 0; padding: 0; box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 // colors schemes
 $heading:#0B132A;
 $text:#4F5665;
 $fill:#F53838;
+// flex aligment method in shoter   
+header{
+    margin: 0 auto;
+    height: 13vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+    .logo{
+        width: 149px;
+        height: auto;
+    }
+    .nav-links-ul{
+        display: flex;
+        gap: 30px;
+    }
+    .nav-act-ul{
+        display: flex;
+        gap: 30px;
+    }
+    .sign-up{
+        padding: 10px 30px;
+        color:$fill;
+        border: 1px solid $fill;
+        border-radius: 20px;
+    }
+}
