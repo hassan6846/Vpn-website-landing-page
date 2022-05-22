@@ -7,7 +7,19 @@
   list-style-type: none;
 }
 
-header {
+a {
+  font-family: 'Rubik', sans-serif;
+  font-weight: medium;
+  color: #4F5665;
+  font-size: 16px;
+}
+
+.hero {
+  height: 90vh;
+  width: 100%;
+}
+
+.hero header {
   margin: 0 auto;
   height: 13vh;
   width: 90%;
@@ -22,29 +34,99 @@ header {
           justify-content: space-between;
 }
 
-header .logo {
+.hero header .logo {
   width: 149px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: auto;
 }
 
-header .nav-links-ul {
+.hero header .nav-links-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
-header .nav-act-ul {
+.hero header .nav-act-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
-header .sign-up {
+.hero header .sign-up {
   padding: 10px 30px;
   color: #F53838;
   border: 1px solid #F53838;
   border-radius: 20px;
+}
+
+.cta {
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+}
+
+.cta-text {
+  color: 50px;
+  font-size: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: mixed;
+}
+
+.cta-text-span {
+  font-weight: bold;
+}
+
+.cta-headline {
+  color: #4F5665;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: medium;
+}
+
+.cta-headline-span {
+  font-weight: bold;
+}
+
+.cta-btn {
+  position: relative;
+  padding: 20px 70px;
+  color: white;
+  border-radius: 10px;
+  background-color: #F53838;
+}
+
+.blur-btn {
+  width: 200px;
+  margin: 0 auto;
+  height: 30px;
+  margin-top: -15px;
+  color: white;
+  border-radius: 10px;
+  background-color: #f5383878;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  z-index: -23;
+}
+
+.btn-wrappers {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 3;
+  top: 5%;
+  position: relative;
 }
 /*# sourceMappingURL=styles.css.map */

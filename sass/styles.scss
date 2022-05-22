@@ -8,38 +8,97 @@
 $heading:#0B132A;
 $text:#4F5665;
 $fill:#F53838;
-// flex aligment method in shoter   
+// font sizes
+$para:16px;
+$heading:50px;
 a{
+    font-family: 'Rubik', sans-serif;
+    font-weight: medium;
     color: $text;
+    font-size: $para;
 }
-header{
-    margin: 0 auto;
-    height: 13vh;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-     
-    .logo{
-        width: 149px;
-        height: auto;
-    }
-    .nav-links-ul{
+.hero{
+    height:90vh;
+    width: 100%;
+    header{
+        margin: 0 auto;
+        height: 13vh;
+        width: 90%;
         display: flex;
-        gap: 30px;
-    }
-    .nav-act-ul{
-        display: flex;
-        gap: 30px;
-    }
-    .sign-up{
-        padding: 45px 150px;
-        color:$fill;
-        border: 1px solid $fill;
-        border-radius: 20px;
-    }
-}
+        align-items: center;
+        justify-content: space-between;
+         
+        .logo{
+            width: 149px;
+            object-fit: cover;
+            height: auto;
+        }
+        .nav-links-ul{
+            display: flex;
+            gap: 30px;
+        }
+        .nav-act-ul{
+            display: flex;
+            gap: 30px;
+        }
+        .sign-up{
+            padding: 10px 30px;
+            color:$fill;
+            border: 1px solid $fill;
+            border-radius: 20px;
+        }
 
+    }
+}.cta{
+  margin: 0 auto;
+    height: 100%;
+    width: 90%;
+}
+.cta-text{
+color: $heading;
+font-size: $heading;
+font-family: 'Rubik', sans-serif;
+font-weight: mixed;
+}
+.cta-text-span{
+    font-weight: bold;
+}
+.cta-headline{
+    color: #4F5665;
+    font-size: $para;
+    font-family: 'Rubik', sans-serif;
+    font-weight: medium;
+}
+.cta-headline-span{
+    font-weight: bold;
+}
+.cta-btn{
+    position: relative;
+    padding: 20px 70px;
+    color: white;
+    border-radius: 10px;
+    background-color: $fill;
+}
+.blur-btn{
+    width: 200px;
+    margin: 0 auto;
+    height: 30px;
+    margin-top: -15px;
+    color: white;
+    border-radius: 10px;
+    background-color: #f5383878;
+    filter: blur(10px);
+    z-index: -23;
+}
+.btn-wrappers{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    top: 5%;
+    position: relative;
+}
 @media (min-width:300px) and (max-width:600px) {
 
 }
